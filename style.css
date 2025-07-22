@@ -1,22 +1,63 @@
 body {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 20px;
     justify-content: center;
-    align-items: stretch;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
+    background-color: beige;
+}
+h1 {
+    margin: 0 ;
+    padding: 0;
+    font-family: georgia;
+    color:rgb(4, 158, 150);
+}
+button {
+    background-color: aliceblue;
+}
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    height: 50px;
+    width: 700px;
+    margin-top: 10px;
+    gap: 10px;
+}
+#sketch {
+    height: 50px;
+    width: 500px;
+    border: 1px solid;
+    border-radius: 20px;
+    font-family: monospace;
+}
+#rainbow {
+    height: 50px;
+    width: 70px;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 50px;
+    color: white;
+    background-image: linear-gradient(to bottom, red,orange,yellow,green,blue,indigo,violet);
+}
+#clear, #erase, #start{
+    height: 50px;
+    width: 130px;
+    border: 1px solid;
+    border-radius: 20px;
+    font-family: monospace;
 }
 #container {
-    margin: 0;
-    padding: 10px;
     display: flex;
-    border: solid 2px;
-    border-radius: 10px;
     flex-wrap: wrap;
+    padding: 10px;
     box-sizing: border-box;
+    border: solid 1px;
+    border-radius: 20px;
+    height: 700px;
+    width: 700px;
+    background-color: azure;
 }
-#container > div {
-    display: flex;
+.pixel {
     box-sizing: border-box;
 }
